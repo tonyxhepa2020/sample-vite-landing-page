@@ -1,32 +1,56 @@
 <template>
-  <!--Nav-->
-  <nav>
-    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
-      <a class="font-bold text-2xl lg:text-4xl" href="#"> SHMW </a>
-      <div class="block lg:hidden">
-        <button
-          class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none"
+  <nav
+    class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+  >
+    <div
+      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    >
+      <div
+        class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+      >
+        <a
+          class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+          href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+          >The Power Room</a
+        ><button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button"
+          onclick="toggleNavbar('example-collapse-navbar')"
         >
-          <svg
-            class="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          <i class="text-white fas fa-bars"></i>
         </button>
       </div>
-      <div class="hidden lg:block">
-        <ul class="inline-flex">
-          <li>
-            <a class="px-4 font-bold" href="/">Home</a>
+      <div
+        class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+        id="example-collapse-navbar"
+      >
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <!-- Icon 1 -->
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#pablo"
+              ><i class="text-orange-500 fab fa-facebook text-lg leading-lg"></i
+              ><span class="lg:hidden inline-block ml-2">Share</span></a
+            >
           </li>
-          <li>
-            <a class="px-4 hover:text-gray-800" href="#">About</a>
+          <!-- Icon 2 -->
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#pablo"
+              ><i class="text-orange-500 fab fa-twitter text-lg leading-lg"></i
+              ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+            >
           </li>
-          <li>
-            <a class="px-4 hover:text-gray-800" href="#">Contact</a>
+          <!-- Icon 3 -->
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#pablo"
+              ><i class="text-orange-500 fab fa-linkedin text-lg leading-lg"></i
+              ><span class="lg:hidden inline-block ml-2">Profile</span></a
+            >
           </li>
         </ul>
       </div>
